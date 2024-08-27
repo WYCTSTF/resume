@@ -1,0 +1,95 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{沈宇昊}
+
+\basicInfo{
+  \email{996098413@qq.com} \textperiodcentered\ 
+  \phone{(+86) 159-671-51885} \textperiodcentered\ 
+  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+}
+ 
+\section{\faGraduationCap\  教育背景}
+% \datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
+% \textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
+\datedsubsection{\textbf{兰州理工大学}, 兰州, 甘肃}{2021 -- 2025}
+\textit{本科在读}\ 软件工程
+
+\section{\faUsers\ 项目经历}
+
+\datedsubsection{\textbf{鲲鹏数学库ibm精度库的45个接口生态完善 第三期}}{2023年7月 -- 2023年12月}
+\role{C, Python, X86 asm}{校企合作项目，项目核心成员}
+\begin{onehalfspacing}
+基于鲲鹏920平台，完善libm精度库基础数学函数接口，每个基础数学函数接口精度对标x86 imf2021版本保持100\%一致, https://www.hikunpeng.com/developer/ecology\_remit/D00295
+\begin{itemize}
+  \item 编写并校验long double浮点型精度运算、转换、对比函数方法
+  \item 整理IDA pro远程连接服务器动态调试，gdb动态调试，X86相关指令集如SSE寄存器和相关汇编函数功能，监控并跟进项目整体进度定期汇报。
+  \item 通过IDA pro反编译，反汇编结合gdb动态调试，逆向3个 X86下Intel ICC库函数long double版本至arm下LLVM/Clang，实现100\%精度一致，通过华为精度测试和代码规范评审。
+\end{itemize}
+\end{onehalfspacing}
+
+% \datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
+% \role{\LaTeX, Python}{个人项目}
+% \begin{onehalfspacing}
+% 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+% \begin{itemize}
+%   \item 容易定制和扩展
+%   \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
+%   \item 支持 FontAwesome 4.5.0
+% \end{itemize}
+% \end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 个人技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 具备扎实的计算机基础，包括但不限于数据结构与算法，操作系统，计算机网络。
+  \item 熟悉C++ STL相关语法，C++11大部分特性。
+  \item 熟悉Linux及Linux下开发工具链的环境配置、使用，能编写Python、Shell脚本。
+  \item 了解MySQL、PostgreSQL、NoSQL等数据库的装置、权限装备、数据迁移等。
+  \item 熟练使用Nginx、Tomcat等Web服务器，负载均衡、反向代理的功能。
+  \item 了解HTML/CSS/JS前端三件套，使用过Vue+SpringBoot框架。
+  \item 熟练使用Git，熟悉团队协作流程，有开源社区交流经验。
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedline{校级三好学生}{2021-2022}
+\datedline{校级一等奖学金}{2021-2022}
+\datedline{蓝桥杯\ 国家级\ 二等奖}{2022}
+\datedline{RAICOM编程赛道\ 国家级\ 二等奖}{2022}
+\datedline{团体程序设计天梯赛\ 国家级\ 个人三等奖}{2023}
+\datedline{RAICOM编程赛道\ 国家级\ 一等奖}{2024}
+\datedline{蓝桥杯\ 国家级\ 二等奖}{2024}
+\datedline{ICPC全国邀请赛(陕西)\ 铜奖}{2024}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 技术博客: https://blog.syh521.cn
+  \item GitHub: https://github.com/WYCTSTF
+  %\item 语言: 英语 - 熟练(TOEFL xxx)
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
