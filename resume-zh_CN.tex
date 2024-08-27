@@ -34,9 +34,9 @@
 \begin{onehalfspacing}
 基于鲲鹏920平台，完善libm精度库基础数学函数接口，每个基础数学函数接口精度对标x86 imf2021版本保持100\%一致, https://www.hikunpeng.com/developer/ecology\_remit/D00295
 \begin{itemize}
-  \item 编写并校验long double浮点型精度运算、转换、对比函数方法
-  \item 整理IDA pro远程连接服务器动态调试，gdb动态调试，X86相关指令集如SSE寄存器和相关汇编函数功能，监控并跟进项目整体进度定期汇报。
-  \item 通过IDA pro反编译，反汇编结合gdb动态调试，逆向3个 X86下Intel ICC库函数long double版本至arm下LLVM/Clang，实现100\%精度一致，通过华为精度测试和代码规范评审。
+  \item 编写/校验long double精度计算、转换、对比的位运算方法
+  \item 整理IDA pro远程调试、gdb动态调试方法，x86相关指令集SSE，跟进项目进度定期汇报。
+  \item 通过IDA pro反编译，反汇编结合gdb动态调试，逆向3个 X86下Intel ICC库函数(long double)至arm下华为BiSheng编译器，通过华为精度测试和代码规范评审。
 \end{itemize}
 \end{onehalfspacing}
 
